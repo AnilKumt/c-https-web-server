@@ -1,0 +1,13 @@
+# Compiled Executables & Objects
+https_server
+*.exe
+*.out
+*.o
+*.obj
+
+# SSL Certificates & Private Keys
+server.key
+server.crt
+server.csr
+
+
