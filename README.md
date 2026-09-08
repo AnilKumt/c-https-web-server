@@ -20,10 +20,10 @@ sequenceDiagram
 
     Client->>Socket: Connect to Port 4433
     Socket->>SSL: Initiate SSL_accept Handshake
-    Client<->>SSL: Perform Secure TLS Handshake
+    Client<<->>SSL: Perform Secure TLS Handshake
     Client->>SSL: Send HTTP Request
     SSL->>Server: Decrypt Request Data (SSL_read)
-    
+
     alt GET /users
         Server-->>SSL: Return JSON user list
     else POST /feedback
